@@ -40,45 +40,55 @@
             display: flex
         }
 
-        .img-c {
-
-            width: 50;
-            height: 50%;
-            position: relative;
+        .figure {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-redonda {
             border-radius: 50%;
             padding: 50px;
-           
-
+            align-items: flex-end;
         }
-        .footer{
+
+        .footer {
             background-color: brown;
             width: 100%;
             height: 50px;
-        }
-        .section img {
-            margin: 10px;
+            bottom: 0;
             padding: 10px;
         }
+
+       
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="nav">
+        <header class="nav">
 
-        </div>
-        <div class="header"></div>
-        <div class="section"></div>
+        </header>
+        <nav class="header">
+            <img src="https://picsum.photos/200/200" alt="Header Image">
+
+        </nav>
+        <section class="section">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit corrupti eius excepturi in, quis architecto expedita consequuntur aut perspiciatis sit, temporibus sed, quam fugit quidem deserunt minus. Optio, fuga distinctio?</p>
+        </section>
 
         <!-- section com 3 imagens -->
-        <div class="section">
-            <img src="https://picsum.photos/200/200" alt="" class="img-c">
-            <img src="https://picsum.photos/200/200" alt="" class="img-c">
-            <img src="https://picsum.photos/200/200" alt="" class="img-c">
-        </div>
+        <section class="section">
+            <div class="figure">
+                <img src="https://picsum.photos/200/200" alt="Image 1" class="img-redonda">
+                <img src="https://picsum.photos/200/200" alt="Image 2" class="img-redonda">
+                <img src="https://picsum.photos/200/200" alt="Image 3" class="img-redonda">
+            </div>
+
+        </section>
 
 
-        <div class="article">
+        <article class="article">
 
             <h1>teste</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt quas iste, eveniet,
@@ -88,12 +98,12 @@
                 quibusdam
                 quia, quas voluptates.</p>
 
-        </div>
-        <div class="footer" >
-            
+        </article>
+        <footer class="footer">
+
             <p>teste</p>
 
-        </div>
+        </footer>
     </div>
 </body>
 
